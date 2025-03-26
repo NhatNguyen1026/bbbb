@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>
+    BombPixel
+  </title>
+
+  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+  <meta name="viewport"
+    content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1,minimal-ui=true" />
+
+  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- force webkit on 360 -->
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <!-- force edge on IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- force full screen on some browser -->
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+
+  <!--fix fireball/issues/3568 -->
+  <!--<meta name="browsermode" content="application">-->
+  <meta name="x5-page-mode" content="app">
+
+  <!--<link rel="apple-touch-icon" href=".png" />-->
+  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+  <link rel="manifest"
+    href="https://peach-tricky-puffin-292.mypinata.cloud/ipfs/bafkreiebja6on66v52il2vrx5dgsz6v534lrzu6rndazqxqwly6fk24l7a" />
+  <link rel="stylesheet" type="text/css" href="style.02f4a.css" />
+  <link rel="icon" href="https://gateway.pinata.cloud/ipfs/QmWRh5PxHRPk5KE2p9Ti25sn76KnuMwpgb6uHbr8ina8h3" />
+  <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+  <!-- LIFF SDK -->
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <!-- DappPortal SDK -->
+  <script src="https://static.kaiawallet.io/js/dapp-portal-sdk.js"></script>
+  <script>
+    function initAnalytics() {
+      window.telegramAnalytics.init({
+        token: 'eyJhcHBfbmFtZSI6IkJvbWJQaXhlbEJvdCIsImFwcF91cmwiOiJodHRwczovL3QubWUvQm9tYlBpeGVsQm90L3BsYXkiLCJhcHBfZG9tYWluIjoiaHR0cHM6Ly9tb2JpbGUuYm9tYnBpeGVsLnh5ei8ifQ==!LiePz48r6KBSgbfX+hqDRLNNFwn/ve+Dk0RsaEgCDpw=',
+        appName: 'ANALYTICS_IDENTIFIER',
+      });
+    }
+  </script>
+  <!-- Add Telegram Analytics script to HTML head -->
+  <script async src="https://tganalytics.xyz/index.js" onload="initAnalytics()" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="GameDiv" cc_exact_fit_screen="true">
+    <div id="Cocos3dGameContainer">
+      <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
+    </div>
+  </div>
+  
+
+<!-- Polyfills bundle. -->
+
+<script src="src/polyfills.bundle.e60f8.js" charset="utf-8"> </script>
+
+
+<!-- SystemJS support. -->
+<script src="src/system.bundle.543e6.js" charset="utf-8"> </script>
+
+<!-- Import map -->
+<script src="src/import-map.81886.json" type="systemjs-importmap" charset="utf-8"> </script>
+
+<script>
+    System.import('./index.3e09f.js').catch(function(err) { console.error(err); })
+</script>
+
+
+    <script>
+      window.process = { env: { NODE_ENV: 'production' } };
+      window.focus();
+      document.getElementById("GameCanvas").focus();
+    </script>
+    <script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@okxconnect/universal-provider@1.6.2/dist/okxconnect_universal.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BBMEYQJGH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      document.getElementById("GameCanvas").focus();
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-7BBMEYQJGH');
+    </script>
+</body>
+
+</html>
