@@ -95,7 +95,7 @@
 <script src="src/import-map.81886.json" type="systemjs-importmap" charset="utf-8"> </script>
 
 <script>
-    System.import('./index.b62af.js').catch(function(err) { console.error(err); })
+    System.import('./index.398ba.js').catch(function(err) { console.error(err); })
 </script>
 
 
@@ -110,6 +110,10 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BBMEYQJGH"></script>
     <script>
+      function onTelegramAuth(user) {
+        console.log(user);
+      }
+
       window.dataLayer = window.dataLayer || [];
       document.getElementById("GameCanvas").focus();
       function gtag() { dataLayer.push(arguments); }
