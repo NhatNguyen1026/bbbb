@@ -63,16 +63,17 @@
   <meta name="twitter:image" content="https://bombpixel.xyz/images/thumbnail.png">
 
   <script src="https://sad.adsgram.ai/js/sad.min.js"></script>
+
+  <!-- Telegram Analytics -->
+  <script async src="https://tganalytics.xyz/index.js" onload="initAnalytics()" type="text/javascript"></script>
   <script>
     function initAnalytics() {
       window.telegramAnalytics.init({
-        token: 'eyJhcHBfbmFtZSI6IkJvbWJQaXhlbEJvdCIsImFwcF91cmwiOiJodHRwczovL3QubWUvQm9tYlBpeGVsQm90L3BsYXkiLCJhcHBfZG9tYWluIjoiaHR0cHM6Ly9tb2JpbGUuYm9tYnBpeGVsLnh5ei8ifQ==!LiePz48r6KBSgbfX+hqDRLNNFwn/ve+Dk0RsaEgCDpw=',
-        appName: 'ANALYTICS_IDENTIFIER',
+        token: 'eyJhcHBfbmFtZSI6IkJvbWJQaXhlbEJvdCIsImFwcF91cmwiOiJodHRwczovL3QubWUvQm9tYlBpeGVsQm90L3BsYXkiLCJhcHBfZG9tYWluIjoiaHR0cHM6Ly9tb2JpbGUuYm9tYnBpeGVsLnh5ei8ifQ==!bHWOHW2/A4te5+5LTwkyCQtHOu2OmzB/x/lFesLR2sA=', // SDK Auth token received via @DataChief_bot
+        appName: 'BombPixel', // The analytics identifier you entered in @DataChief_bot
       });
     }
   </script>
-  <!-- Add Telegram Analytics script to HTML head -->
-  <script async src="https://tganalytics.xyz/index.js" onload="initAnalytics()" type="text/javascript"></script>
 </head>
 
 <body>
@@ -95,18 +96,13 @@
 <script src="src/import-map.81886.json" type="systemjs-importmap" charset="utf-8"> </script>
 
 <script>
-    System.import('./index.f1e55.js').catch(function(err) { console.error(err); })
+    System.import('./index.28c33.js').catch(function(err) { console.error(err); })
 </script>
 
 
     <script>
       window.process = { env: { NODE_ENV: 'production' } };
-      window.focus();
-      document.getElementById("GameCanvas").focus();
     </script>
-    <script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@okxconnect/universal-provider@1.6.2/dist/okxconnect_universal.min.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BBMEYQJGH"></script>
     <script>
